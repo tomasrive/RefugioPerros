@@ -1,0 +1,65 @@
+* {
+  font-family: Montserrat light ;
+}
+a {
+  text-decoration: none;
+  
+}
+.view {
+  height: 100vh;
+}
+
+.intro-2 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+}
+
+.div-refugio {
+  background-color: rgb(80, 31, 1);
+  padding: 2px 0 2px 10px;
+  border-radius: 5%;
+}
+
+.div-refugio:hover {
+  transition: 0.6s;
+  background-color: rgb(96, 54, 1);
+}
+
+
+.h5 {
+  margin: 0;
+}
+
+.img-icon:hover {
+  transition: 0.6s;
+  background-color: rgb(96, 54, 1);
+  border-radius: 20%;
+}
+.sphover:hover{
+    background-color:rgb(54, 21, 0)!important;
+}
+.i-queofrecemos {
+  color: rgb(204, 149, 68);
+  background-color: rgb(96, 54, 1);
+  border-radius: 50%;
+  box-shadow: 0 1px 10px rgb(0 0 0 / 46%);
+  border: 3px solid #fff;
+}
+.i-queofrecemos:hover {
+  transition: 0.6s;
+  background-color: rgb(54, 21, 0);
+}
+.p-lineag {
+  height: 3px;
+  background-color: rgb(96, 54, 1);
+}
+.p-linea {
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+  height: 3px;
+  background-color: rgb(187, 153, 129);
+}
+
