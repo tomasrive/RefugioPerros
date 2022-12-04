@@ -13,7 +13,7 @@
   <!-- Google Fonts Roboto -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Material Design Bootstrap -->
@@ -25,66 +25,63 @@
 <body>
 
   <!-- Nav  -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar"
-        style="background-color:rgb(54, 21, 0);">
-        <div class=" container">
-            <div class="div-refugio">
-                <img class="pb-1 pr-2"
-                    src="https://img.icons8.com/fluency-systems-regular/30/ffffff/dog-house.png" />
-                <a class="navbar-brand font-weight-bold title" href="./refugio.html">Refugio</a>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar" style="background-color:rgb(54, 21, 0);">
+    <div class=" container">
+      <div class="div-refugio">
+        <img class="pb-1 pr-2" src="https://img.icons8.com/fluency-systems-regular/30/ffffff/dog-house.png" />
+        <a class="navbar-brand font-weight-bold title" href="./refugio.html">Refugio</a>
+      </div>
+
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#firstNavBar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="firstNavBar">
+
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item pl-1">
+            <a class="h5 nav-link " href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item pl-1 dropdown">
+            <a class="h5 nav-link dropdown-toggle" href="adopta.html" data-toggle="dropdown">Ser parte</a>
+            <div class=" dropdown-menu">
+              <a href="adopta.html" class="font-weight-bolder sphover dropdown-item">Adoptá</a>
+              <a href="adopta.html#apadrinar" class="font-weight-bolder sphover dropdown-item">Apadriná</a>
+              <a href="adopta.html#voluntariado" class="font-weight-bolder sphover dropdown-item">Voluntariado</a>
             </div>
-
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#firstNavBar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="firstNavBar">
-
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item pl-1">
-                        <a class="h5 nav-link " href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item pl-1 dropdown">
-                        <a class="h5 nav-link dropdown-toggle" href="adopta.html" data-toggle="dropdown">Ser parte</a>
-
-                        <div class=" dropdown-menu">
-                            <a href="adopta.html" class="font-weight-bolder sphover dropdown-item">Adoptá</a>
-                            <a href="adopta.html" class="font-weight-bolder sphover dropdown-item">Apadriná</a>
-                            <a href="adopta.html" class="font-weight-bolder sphover dropdown-item">Voluntariado</a>
-                        </div>
-                    </li>
+          </li>
 
 
-                    <li class="nav-item pl-1">
-                        <a class="h5 nav-link" href="./sobrenosotros.html">Sobre nosotros</a>
-                    </li>
+          <li class="nav-item pl-1">
+            <a class="h5 nav-link" href="./sobrenosotros.html">Sobre nosotros</a>
+          </li>
 
-                    <li class="nav-item pl-1">
-                        <a class="h5 nav-link " href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
+          <li class="nav-item pl-1">
+            <a class="h5 nav-link " href="contacto.html">Contacto</a>
+          </li>
+        </ul>
 
-                <!-- Iconos  -->
-                <ul class="navbar-nav nav-flex-icons">
-                    <li class="img-icon nav-item">
-                        <a class="nav-link" href="#">
-                            <img src="https://img.icons8.com/material/24/ffffff/facebook-f.png" />
-                        </a>
-                    </li>
-                    <li class="img-icon nav-item">
-                        <a class="nav-link" href="#">
-                            <img src="https://img.icons8.com/material/24/ffffff/twitter-squared.png" />
-                        </a>
-                    </li>
-                    <li class="img-icon nav-item">
-                        <a class="nav-link" href="#">
-                            <img src="https://img.icons8.com/material/24/ffffff/instagram-new--v1.png" />
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        <!-- Iconos  -->
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="img-icon nav-item">
+            <a class="nav-link" href="#">
+              <img src="https://img.icons8.com/material/24/ffffff/facebook-f.png" />
+            </a>
+          </li>
+          <li class="img-icon nav-item">
+            <a class="nav-link" href="#">
+              <img src="https://img.icons8.com/material/24/ffffff/twitter-squared.png" />
+            </a>
+          </li>
+          <li class="img-icon nav-item">
+            <a class="nav-link" href="#">
+              <img src="https://img.icons8.com/material/24/ffffff/instagram-new--v1.png" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <!-- Inicio  -->
   <main>
@@ -201,12 +198,12 @@
 
             <div class="col-sm pt-5">
               <div class=" mx-auto">
-                <a href="#">
-                  <div class="text-center">
-                    <i class="i-queofrecemos fa-solid fa-shield-dog pt-4"
-                      style="font-size: 50px;width: 110px; height: 110px;"></i>
-                  </div>
-                </a>
+
+                <div class="text-center">
+                  <img class="imgOfrecemos" src="./img/dog.svg" alt="">
+
+                </div>
+
                 <div class="pt-3">
                   <h5 class=" pt-2 text-center text-uppercase font-weight-bold">
                     Seguridad
@@ -222,12 +219,11 @@
 
             <div class="col-sm pt-5">
               <div class=" mx-auto">
-                <a href="#">
-                  <div class="text-center">
-                    <i class="i-queofrecemos fa-solid fa-fire pt-4"
-                      style="font-size: 50px;width: 110px; height: 110px;"></i>
-                  </div>
-                </a>
+
+                <div class="text-center">
+                  <img class="imgOfrecemos" src="./img/fire.svg" alt="">
+                </div>
+
                 <div class="pt-3">
                   <h5 class=" pt-2 text-center text-uppercase font-weight-bold">
                     Calidez
@@ -243,12 +239,11 @@
 
             <div class="col-sm pt-5">
               <div class="mx-auto">
-                <a href="#">
-                  <div class="text-center">
-                    <i class="i-queofrecemos fa-solid fa-heart-circle-plus pt-4"
-                      style="font-size: 50px;width: 110px; height: 110px;"></i>
-                  </div>
-                </a>
+
+                <div class="text-center">
+                  <img class="imgOfrecemos" src="./img/heart.svg" alt="">
+                </div>
+
                 <div class="pt-3">
                   <h5 class=" pt-2 text-center text-uppercase font-weight-bold">
                     Respeto
@@ -264,12 +259,11 @@
 
             <div class="col-sm pt-5">
               <div class=" mx-auto">
-                <a href="#">
-                  <div class="text-center">
-                    <i class="i-queofrecemos fa-solid fa-forward-fast pt-4"
-                      style="font-size: 50px;width: 110px; height: 110px;"></i>
-                  </div>
-                </a>
+
+                <div class="text-center">
+                  <img class="imgOfrecemos" src="./img/forward.svg" alt="">
+                </div>
+
                 <div class="pt-3">
                   <h5 class=" pt-2 text-center text-uppercase font-weight-bold">
                     Rapidez
@@ -298,10 +292,10 @@
         </div>
       </div>
 
-     <div class="container my-5">
+      <div class="container my-5">
         <h1 class="my-5 text-center text-uppercase">Nuestro equipo</h1>
         <div class="row">
-          
+
           <div class="col-lg pb-4">
             <div class="hoverable card text-center">
               <div class="face front">
@@ -367,7 +361,7 @@
             </div>
           </div>
 
-        
+
         </div>
       </div>
 
@@ -376,107 +370,106 @@
   </main>
 
   <footer class="page-footer font-small pt-4"
-        style="background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(img/beach-863139_1920.jpg); background-size: cover;background-position: center;">
+    style="background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(img/beach-863139_1920.jpg); background-size: cover;background-position: center;">
 
-        <div class="container py-5">
-            <div class="row pt-5">
+    <div class="container py-5">
+      <div class="row pt-5">
 
-                <div class="col-sm mb-4" style="border-right: 0.5px dashed rgb(204, 149, 68);">
+        <div class="col-sm mb-4" style="border-right: 0.5px dashed rgb(204, 149, 68);">
 
-                    <ul class="list-unstyled ">
+          <ul class="list-unstyled ">
 
-                        <li>
-                            <a href="refugio.html">
-                                <h5 class="font-weight-bold">Refugio</h5>
-                            </a>
-                        </li>
+            <li>
+              <a href="refugio.html">
+                <h5 class="font-weight-bold">Refugio</h5>
+              </a>
+            </li>
 
-                        <li>
-                            <a href="index.html">
-                                <h5 class="font-weight-bold">Inicio</h5>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <h5 class="font-weight-bold">Ser parte</h5>
-                            </a>
-                        <li class="font-italic pl-2">
-                            <a href="adopta.html">
-                                <h6>Adoptá</h6>
-                            </a>
-                        </li>
-                        <li class="font-italic pl-2">
-                            <a href="">
-                                <h6>Apadriná</h6>
-                            </a>
-                        </li>
-                        <li class="font-italic pl-2">
-                            <a href="">
-                                <h6>Voluntariado</h6>
-                            </a>
-                        </li>
-                        </li>
+            <li>
+              <a href="index.html">
+                <h5 class="font-weight-bold">Inicio</h5>
+              </a>
+            </li>
+            <li>
+              <a href="adopta.html">
+                <h5 class="font-weight-bold">Ser parte</h5>
+              </a>
+            <li class="font-italic pl-2">
+              <a href="adopta.html#adoptar">
+                <h6>Adoptá</h6>
+              </a>
+            </li>
+            <li class="font-italic pl-2">
+              <a href="adopta.html#apadrinar">
+                <h6>Apadriná</h6>
+              </a>
+            </li>
+            <li class="font-italic pl-2">
+              <a href="adopta.html#voluntariado">
+                <h6>Voluntariado</h6>
+              </a>
+            </li>
+            </li>
+            <li>
+              <a href="sobrenosotros.html">
+                <h5 class="font-weight-bold">Sobre nosotros</h5>
+              </a>
+            </li>
 
-                        <li>
-                            <a href="sobrenosotros.html">
-                                <h5 class="font-weight-bold">Sobre nosotros</h5>
-                            </a>
-                        </li>
+            <li>
+              <a href="contacto.html">
+                <h5 class="font-weight-bold">Contacto</h5>
+              </a>
+            </li>
 
-                        <li>
-                            <a href="#">
-                                <h5 class="font-weight-bold">Contacto</h5>
-                            </a>
-                        </li>
+          </ul>
 
-                    </ul>
+        </div>
 
-                </div>
-
-                <div class="col-sm mb-4" style="border-right: 0.5px dashed rgb(204, 149, 68);">
-                  <h2 class="text-center mb-3 font-weight-bold">Seguinos!</h2>
-                  <ul class="list-group-horizontal">
-                      <div class="text-center row">
-                          <li class="text-center nav col mb-3">
-                              <a>
-                                  <i class="fa-brands fa-facebook" style="font-size: 40px;"></i>
-                              </a>
-                          </li>
-                          <li class="text-center nav col mb-3">
-                              <a>
-                                  <i class="fa-brands fa-twitter-square" style="font-size: 40px;"></i>
-                              </a>
-                          </li>
-                          <li class="text-center nav col mb-3">
-                              <a>
-                                  <i class="fa-brands fa-instagram-square" style="font-size: 40px;"></i>
-                              </a>
-                          </li>
-
-                      </div>
-
-                  </ul>
-              </div>
-
-                <div class="col-md-6 mb-4 my-auto">
-                    <form class="input-group">
-                        <input type="text" class="form-control form-control-sm" placeholder="E-mail" aria-label="E-mail"
-                            aria-describedby="basic-addon2">
-                        <div class="input-group-append">
-                            <button class="btn btn-sm my-0 font-weight-bold" type="button"
-                                style="background-color: rgb(204, 149, 68) ;">Enviar</button>
-                        </div>
-                    </form>
-                </div>
-
+        <div class="col-sm mb-4" style="border-right: 0.5px dashed rgb(204, 149, 68);">
+          <h2 class="text-center mb-3 font-weight-bold">Seguinos!</h2>
+          <ul class="list-group-horizontal">
+            <div class="text-center row">
+              <li class="text-center nav col mb-3">
+                <a>
+                  <img class="imgFooter" src="./img/facebook.svg" alt="">
+                </a>
+              </li>
+              <li class="text-center nav col mb-3">
+                <a>
+                  <img class="imgFooter" src="./img/twitter.svg" alt="">
+                </a>
+              </li>
+              <li class="text-center nav col mb-3">
+                <a>
+                  <img class="imgFooter" src="./img/instagram.svg" alt="">
+                </a>
+              </li>
 
             </div>
+
+          </ul>
         </div>
 
-        <div class="footer-copyright text-center py-3">© 2022 Copyright:
-            <a href="/"> MDBootstrap.com</a>
+        <div class="col-md-6 mb-4 my-auto">
+          <form class="input-group">
+            <input required type="text" class="form-control form-control-sm" placeholder="E-mail" aria-label="E-mail"
+              aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-sm my-0 font-weight-bold" type="submit"
+                style="background-color: rgb(204, 149, 68) ;">Enviar</button>
+            </div>
+          </form>
         </div>
-    </footer>
+
+
+      </div>
+    </div>
+
+    <div class="footer-copyright text-center py-3">© 2022 Copyright:
+      <a href="/"> MDBootstrap.com</a>
+    </div>
+  </footer>
 
 
 
@@ -493,7 +486,6 @@
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Your custom scripts (optional) -->
   <script type="text/javascript"></script>
-  <script src="https://kit.fontawesome.com/813d5fe1dd.js" crossorigin="anonymous"></script>
 
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 

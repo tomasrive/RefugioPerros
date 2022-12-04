@@ -13,7 +13,7 @@
     <!-- Google Fonts Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Material Design Bootstrap -->
@@ -29,8 +29,7 @@
         style="background-color:rgb(54, 21, 0);">
         <div class=" container">
             <div class="div-refugio">
-                <img class="pb-1 pr-2"
-                    src="https://img.icons8.com/fluency-systems-regular/30/ffffff/dog-house.png" />
+                <img class="pb-1 pr-2" src="https://img.icons8.com/fluency-systems-regular/30/ffffff/dog-house.png" />
                 <a class="navbar-brand font-weight-bold title" href="./refugio.html">Refugio</a>
             </div>
 
@@ -49,8 +48,10 @@
 
                         <div class=" dropdown-menu">
                             <a href="adopta.html" class="font-weight-bolder sphover dropdown-item">Adoptá</a>
-                            <a href="adopta.html" class="font-weight-bolder sphover dropdown-item">Apadriná</a>
-                            <a href="adopta.html" class="font-weight-bolder sphover dropdown-item">Voluntariado</a>
+                            <a href="adopta.html#apadrinar"
+                                class="font-weight-bolder sphover dropdown-item">Apadriná</a>
+                            <a href="adopta.html#voluntariado"
+                                class="font-weight-bolder sphover dropdown-item">Voluntariado</a>
                         </div>
                     </li>
 
@@ -119,18 +120,18 @@
                 <div class="py-5 row">
 
                     <div class="col-md-9  mb-5">
-                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                        <form id="contact-form" name="contact-form">
 
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="md-form ">
-                                        <input type="text" id="name" name="name" class="form-control">
+                                        <input required type="text" id="name" name="name" class="form-control">
                                         <label for="name">Nombre</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="md-form">
-                                        <input type="text" id="lastname" name="lastname" class="form-control">
+                                        <input required type="text" id="lastname" name="lastname" class="form-control">
                                         <label for="name">Apellido</label>
                                     </div>
                                 </div>
@@ -142,39 +143,33 @@
 
                                 <div class="col-md-12">
                                     <div class="md-form ">
-                                        <input type="text" id="email" name="email" class="form-control">
+                                        <input required type="text" id="email" name="email" class="form-control">
                                         <label for="email">E-mail</label>
                                     </div>
                                 </div>
 
                                 <div class="col-md-12">
                                     <div class="md-form ">
-                                        <input type="text" id="subject" name="subject" class="form-control">
+                                        <input required type="text" id="subject" name="subject" class="form-control">
                                         <label for="subject">Motivo del mensaje</label>
                                     </div>
                                 </div>
 
                                 <div class="col-md">
                                     <div class="md-form">
-                                        <textarea type="text" id="message" name="message" rows="2"
+                                        <textarea required type="text" id="message" name="message" rows="2"
                                             class="form-control md-textarea"></textarea>
                                         <label for="message">Mensaje</label>
                                     </div>
                                 </div>
 
                             </div>
-
+                            <button class="btn my-4 white-text" type="submit"
+                                style="background-color: rgb(204, 149, 68);">Enviar</button>
                         </form>
 
-                        <div class="text-center text-md-left">
-                            <a class="btn" style="background-color: rgb(204, 149, 68);"
-                                onclick="document.getElementById('contact-form').submit();">Send</a>
-                        </div>
-                        <div class="status"></div>
                     </div>
-                    <!--Grid column-->
 
-                    <!--Grid column-->
                     <div class="col-md-3 pt-4 text-center">
                         <ul class="list-unstyled ">
                             <li><i class="fas fa-map-marker-alt fa-2x"></i>
@@ -292,26 +287,25 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="adopta.html">
                                 <h5 class="font-weight-bold">Ser parte</h5>
                             </a>
                         <li class="font-italic pl-2">
-                            <a href="adopta.html">
+                            <a href="adopta.html#adoptar">
                                 <h6>Adoptá</h6>
                             </a>
                         </li>
                         <li class="font-italic pl-2">
-                            <a href="">
+                            <a href="adopta.html#apadrinar">
                                 <h6>Apadriná</h6>
                             </a>
                         </li>
                         <li class="font-italic pl-2">
-                            <a href="">
+                            <a href="adopta.html#voluntariado">
                                 <h6>Voluntariado</h6>
                             </a>
                         </li>
                         </li>
-
                         <li>
                             <a href="sobrenosotros.html">
                                 <h5 class="font-weight-bold">Sobre nosotros</h5>
@@ -319,7 +313,7 @@
                         </li>
 
                         <li>
-                            <a href="#">
+                            <a href="contacto.html">
                                 <h5 class="font-weight-bold">Contacto</h5>
                             </a>
                         </li>
@@ -334,17 +328,17 @@
                         <div class="text-center row">
                             <li class="text-center nav col mb-3">
                                 <a>
-                                    <i class="fa-brands fa-facebook" style="font-size: 40px;"></i>
+                                    <img class="imgFooter" src="./img/facebook.svg" alt="">
                                 </a>
                             </li>
                             <li class="text-center nav col mb-3">
                                 <a>
-                                    <i class="fa-brands fa-twitter-square" style="font-size: 40px;"></i>
+                                    <img class="imgFooter" src="./img/twitter.svg" alt="">
                                 </a>
                             </li>
                             <li class="text-center nav col mb-3">
                                 <a>
-                                    <i class="fa-brands fa-instagram-square" style="font-size: 40px;"></i>
+                                    <img class="imgFooter" src="./img/instagram.svg" alt="">
                                 </a>
                             </li>
 
@@ -356,10 +350,10 @@
 
                 <div class="col-md-6 mb-4 my-auto">
                     <form class="input-group">
-                        <input type="text" class="form-control form-control-sm" placeholder="E-mail" aria-label="E-mail"
-                            aria-describedby="basic-addon2">
+                        <input required type="text" class="form-control form-control-sm" placeholder="E-mail"
+                            aria-label="E-mail" aria-describedby="basic-addon2">
                         <div class="input-group-append">
-                            <button class="btn btn-sm my-0 font-weight-bold" type="button"
+                            <button class="btn btn-sm my-0 font-weight-bold" type="submit"
                                 style="background-color: rgb(204, 149, 68) ;">Enviar</button>
                         </div>
                     </form>
@@ -390,7 +384,6 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Your custom scripts (optional) -->
     <script type="text/javascript"></script>
-    <script src="https://kit.fontawesome.com/813d5fe1dd.js" crossorigin="anonymous"></script>
 
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 

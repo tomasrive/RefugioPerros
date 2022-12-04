@@ -13,7 +13,7 @@
   <!-- Google Fonts Roboto -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Material Design Bootstrap -->
@@ -45,10 +45,11 @@
           <li class="nav-item pl-1 dropdown">
             <a class="h5 nav-link dropdown-toggle" href="adopta.html" data-toggle="dropdown">Ser parte</a>
 
+
             <div class=" dropdown-menu">
               <a href="adopta.html" class="font-weight-bolder sphover dropdown-item">Adoptá</a>
-              <a href="adopta.html" class="font-weight-bolder sphover dropdown-item">Apadriná</a>
-              <a href="adopta.html" class="font-weight-bolder sphover dropdown-item">Voluntariado</a>
+              <a href="adopta.html#apadrinar" class="font-weight-bolder sphover dropdown-item">Apadriná</a>
+              <a href="adopta.html#voluntariado" class="font-weight-bolder sphover dropdown-item">Voluntariado</a>
             </div>
           </li>
 
@@ -108,7 +109,7 @@
     <div class="container1">
 
 
-      <div class="py-5 container" id="iniciopg">
+      <div class="py-5 container" id="adoptar">
         <h1 class="mt-5 text-center text-uppercase">Adoptar</h1>
         <p class=" container p-lineag"></p>
         <!-- Adopta -->
@@ -124,30 +125,33 @@
                 <div class="form-row mb-4">
                   <div class="col">
                     <!-- First name -->
-                    <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Nombre">
+                    <input type="text" required id="defaultRegisterFormFirstName" class="form-control"
+                      placeholder="Nombre">
                   </div>
                   <div class="col">
                     <!-- Last name -->
-                    <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Apellido">
+                    <input type="text" required id="defaultRegisterFormLastName" class="form-control"
+                      placeholder="Apellido">
                   </div>
                 </div>
 
                 <!-- E-mail -->
-                <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+                <input type="email" required id="defaultRegisterFormEmail" class="form-control mb-4"
+                  placeholder="E-mail">
 
                 <!-- Phone number -->
-                <input type="text" id="defaultRegisterPhonePassword" class="form-control"
+                <input type="number" required id="defaultRegisterPhonePassword" class="form-control"
                   placeholder="Numero de telefono" aria-describedby="defaultRegisterFormPhoneHelpBlock">
 
                 <!--Material textarea-->
                 <div class="md-form md-outline">
-                  <textarea class="md-textarea form-control" rows="3" placeholder="Mensaje"></textarea>
+                  <textarea required class="md-textarea form-control" rows="3" placeholder="Mensaje"></textarea>
                 </div>
 
                 <!-- Default unchecked -->
                 <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
-                  <label class="custom-control-label" for="defaultUnchecked">Se compromete a todo lo aclarado?</label>
+                  <input required type="checkbox" class="custom-control-input" id="defaultUnchecked1">
+                  <label class="custom-control-label" for="defaultUnchecked1">Se compromete a todo lo aclarado?</label>
                 </div>
 
                 <!-- Sign up button -->
@@ -187,7 +191,7 @@
         </div>
       </div>
 
-      <div class="py-5 container" id="voluntariado">
+      <div class="py-5 container" id="apadrinar">
         <h1 class="mt-5 text-center text-uppercase">Apadrinar</h1>
         <p class=" container p-lineag"></p>
         <!-- Adopta -->
@@ -204,12 +208,14 @@
 
                   <div class="col">
                     <!-- First name -->
-                    <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Nombre">
+                    <input type="text" required id="defaultRegisterFormFirstName" class="form-control"
+                      placeholder="Nombre">
                   </div>
 
                   <div class="col">
                     <!-- Last name -->
-                    <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Apellido">
+                    <input type="text" required id="defaultRegisterFormLastName" class="form-control"
+                      placeholder="Apellido">
                   </div>
                 </div>
 
@@ -217,28 +223,29 @@
                 <div class="form-row mb-4">
 
                   <div class="col">
-                    <input type="email" id="defaultRegisterFormEmail" class="form-control" placeholder="E-mail">
+                    <input type="email" required id="defaultRegisterFormEmail" class="form-control"
+                      placeholder="E-mail">
                   </div>
 
                   <div class="col">
-                    <input type="text" id="defaultRegisterPhonePassword" class="form-control"
+                    <input type="text" required id="defaultRegisterPhonePassword" class="form-control"
                       placeholder="Numero de telefono">
                   </div>
                 </div>
 
                 <div class="md-form md-outline">
-                  <input type="text" id="defaultRegisterFormFirstName" class="form-control"
+                  <input type="text" required id="defaultRegisterFormFirstName" class="form-control"
                     placeholder="Nombre del animal que quiero apadrinar">
                 </div>
 
                 <!-- ¿Ya sos Madrina o Padrino? -->
                 <div class="form-check text-left">
-                  <input type="checkbox" class="form-check-input" id="materialUnchecked">
+                  <input type="checkbox" required class="form-check-input" id="materialUnchecked">
                   <label class="form-check-label" for="materialUnchecked">¿Ya sos Madrina o Padrino?</label>
                 </div>
 
                 <div class="md-form md-outline">
-                  <input type="text" id="defaultRegisterFormFirstName" class="form-control"
+                  <input type="text" required id="defaultRegisterFormFirstName" class="form-control"
                     placeholder="Nombre de/los ahijados/as actual/es">
                 </div>
 
@@ -283,28 +290,31 @@
               <h5 class="pt-3">
                 Llene el siguiente formulario:
               </h5>
-              <form class="text-center p-3" action="#!">
+              <form class="text-center p-3" action="#">
                 <div class="form-row mb-4">
                   <div class="col">
                     <!-- First name -->
-                    <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="Nombre">
+                    <input type="text" required id="defaultRegisterFormFirstName" class="form-control"
+                      placeholder="Nombre">
                   </div>
                   <div class="col">
                     <!-- Last name -->
-                    <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Apellido">
+                    <input type="text" required id="defaultRegisterFormLastName" class="form-control"
+                      placeholder="Apellido">
                   </div>
                 </div>
 
                 <!-- E-mail -->
-                <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+                <input type="email" required id="defaultRegisterFormEmail" class="form-control mb-4"
+                  placeholder="E-mail">
 
                 <!-- Phone number -->
-                <input type="text" id="defaultRegisterPhonePassword" class="form-control"
+                <input type="text" required id="defaultRegisterPhonePassword" class="form-control"
                   placeholder="Numero de telefono">
 
                 <div class="custom-control custom-checkbox pt-4">
-                  <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
-                  <label class="custom-control-label" for="defaultUnchecked">Se compromete a ser un voluntario de
+                  <input type="checkbox" class="custom-control-input" id="defaultUnchecked2">
+                  <label class="custom-control-label" for="defaultUnchecked2">Se compromete a ser un voluntario de
                     nuestro grupo?</label>
                 </div>
 
@@ -368,26 +378,25 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="adopta.html">
                 <h5 class="font-weight-bold">Ser parte</h5>
               </a>
             <li class="font-italic pl-2">
-              <a href="adopta.html">
+              <a href="#adoptar">
                 <h6>Adoptá</h6>
               </a>
             </li>
             <li class="font-italic pl-2">
-              <a href="">
+              <a href="#apadrinar">
                 <h6>Apadriná</h6>
               </a>
             </li>
             <li class="font-italic pl-2">
-              <a href="">
+              <a href="#voluntariado">
                 <h6>Voluntariado</h6>
               </a>
             </li>
             </li>
-
             <li>
               <a href="sobrenosotros.html">
                 <h5 class="font-weight-bold">Sobre nosotros</h5>
@@ -395,7 +404,7 @@
             </li>
 
             <li>
-              <a href="#">
+              <a href="contacto.html">
                 <h5 class="font-weight-bold">Contacto</h5>
               </a>
             </li>
@@ -410,17 +419,17 @@
             <div class="text-center row">
               <li class="text-center nav col mb-3">
                 <a>
-                  <i class="fa-brands fa-facebook" style="font-size: 40px;"></i>
+                  <img class="imgFooter" src="./img/facebook.svg" alt="">
                 </a>
               </li>
               <li class="text-center nav col mb-3">
                 <a>
-                  <i class="fa-brands fa-twitter-square" style="font-size: 40px;"></i>
+                  <img class="imgFooter" src="./img/twitter.svg" alt="">
                 </a>
               </li>
               <li class="text-center nav col mb-3">
                 <a>
-                  <i class="fa-brands fa-instagram-square" style="font-size: 40px;"></i>
+                  <img class="imgFooter" src="./img/instagram.svg" alt="">
                 </a>
               </li>
 
@@ -432,10 +441,10 @@
 
         <div class="col-md-6 mb-4 my-auto">
           <form class="input-group">
-            <input type="text" class="form-control form-control-sm" placeholder="E-mail" aria-label="E-mail"
+            <input required type="text" class="form-control form-control-sm" placeholder="E-mail" aria-label="E-mail"
               aria-describedby="basic-addon2">
             <div class="input-group-append">
-              <button class="btn btn-sm my-0 font-weight-bold" type="button"
+              <button class="btn btn-sm my-0 font-weight-bold" type="submit"
                 style="background-color: rgb(204, 149, 68) ;">Enviar</button>
             </div>
           </form>
@@ -466,7 +475,6 @@
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Your custom scripts (optional) -->
   <script type="text/javascript"></script>
-  <script src="https://kit.fontawesome.com/813d5fe1dd.js" crossorigin="anonymous"></script>
 
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
